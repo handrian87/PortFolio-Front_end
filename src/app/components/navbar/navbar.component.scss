@@ -1,0 +1,89 @@
+@use '~src/scss/custom' as *;
+
+.menu {
+  background-color: $main_bgcol;
+  font-family: $font-family-base;
+  li {
+    padding: 0 0.7rem;
+
+    a {
+      color: $typo1_col !important;
+      text-transform: capitalize;
+      font-weight: 600;
+    }
+  }
+}
+.navbar {
+  @include media-breakpoint-down(sm) {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  @include media-breakpoint-down(md) {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  padding-right: 5rem;
+  margin-right: 10rem;
+  margin-left: 10rem;
+}
+
+
+.navbar-light {
+  padding-right: 5px;
+}
+
+// START BTN FOR CELL ICONE
+.btn-rounded {
+  // Mixing from bootstrap to use media-queries
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+
+  position: relative;
+  padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  border: 0.1rem solid rgba(#FFFF, 0.6);
+  background-color: $i-cell-cphone_bgcol;
+  color: $i-phone-number_col;
+
+  span {
+    position: absolute;
+    background-color: #ffff;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+
+    i {
+      color: $i-phone-number_col;
+      font-size: 1rem;
+      line-height: 2.5rem;
+    }
+  }
+  &:hover {
+    color: rgba($black, 0.6);
+    span{
+      background-color: rgba($black, 0.6);
+      i {
+        color: #ffff;
+      }
+    }
+  }
+}
+button {
+  .navbar-toggler{
+    background-color: #4996F5;
+  }
+}
+
+.nav-logo {
+  font-family: $font-family-base;
+}
+
+//// END

@@ -1,0 +1,20 @@
+// Background color - Navbar
+$font-family-base: "Yu Gothic";
+
+$main_bgcol: #FFFF;
+  // Background color - Presentation section
+$sec_bgcol:#FEF9F2;
+  // Typography color - Navbar
+$typo1_col:#544D45;
+  // Typography color - Title + Works description
+$typo2_col:#1C1A17;
+  // Typography color - Who am I contains + My work intro + Project used language
+$typo3_col:#8C8173;
+  // Title size:
+$font-size: 38px;
+
+  // Background color - Button on cellphone
+$i-cell-cphone_bgcol: #E0EEFF;
+$i-phone-number_col: #4996F5;
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
