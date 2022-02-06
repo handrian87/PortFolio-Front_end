@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Poppins:wght@400;500;800;900&display=swap');
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+// Typo
+$typo_base: 'Poppins', sans-serif;;
 // Background color - Navbar
 $font-family-base: "Yu Gothic";
 
 $main_bgcol: #FFFF;
   // Background color - Presentation section
-$sec_bgcol:#FEF9F2;
+//background: #E0EEFF;
+
+$sec_bgcol:#E0EEFF;
   // Typography color - Navbar
 $typo1_col:#544D45;
   // Typography color - Title + Works description
@@ -17,4 +26,3 @@ $font-size: 38px;
 $i-cell-cphone_bgcol: #E0EEFF;
 $i-phone-number_col: #4996F5;
 
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";

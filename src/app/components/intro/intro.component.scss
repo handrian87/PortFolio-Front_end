@@ -1,0 +1,106 @@
+@use '~src/scss/custom' as *;
+@use '~src/app/components/navbar/navbar.component' as *;
+
+@keyframes pulse-border {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.intro-section {
+  background-color: $sec_bgcol;
+  padding: 10rem 0 0 0;
+  width: 100%;
+  height: 100%;
+
+  .container {
+    .align-items-center {
+      margin-top: -4rem;
+    }
+  }
+}
+
+
+.display-2{
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  font-family: $typo_base;
+  &--intro{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 3rem;
+  }
+  &--description{
+    font-size: 1.25rem;
+    display: block;
+    margin-top: 1.2rem;
+    text-transform: none;
+  }
+}
+
+.btn-intro {
+  margin-top: 1rem;
+  background-color: white;
+  span {
+    background-color:#4996F5;
+    i{
+      color: white;
+    }
+  }
+}
+
+
+.intros {
+  .image-haja {
+    position: relative;
+    img {
+      margin-bottom: 3rem;
+      width: 23rem;
+      height: 38rem;
+      z-index: 1;
+      @include media-breakpoint-down(md){
+        width: 12rem;
+        height: 22rem;
+      }
+      @include media-breakpoint-down(sm){
+        width: 10rem;
+        height: 18rem;
+        display: none;
+      }
+    }
+    a {
+      span {
+        i {
+          font-size: 30rem;
+          margin-left: 15rem;
+          color: transparent;
+        }
+      }
+    }
+  }
+}
+
+//.border-round {
+//  margin-top: -1rem;
+//  position: absolute;
+//  margin-left: 15rem;
+//  top: 0;
+//  left: 0;
+//  height: 30rem;
+//  width: 30rem;
+//  border: 1rem solid cornflowerblue;
+//  border-radius: 50%;
+//}
+
+
+
+
+
+
+
+

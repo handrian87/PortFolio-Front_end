@@ -2,14 +2,14 @@
 
 .menu {
   background-color: $main_bgcol;
-  font-family: $font-family-base;
+  font-family: $typo_base;
   li {
     padding: 0 0.7rem;
 
     a {
-      color: $typo1_col !important;
+      color: #544D45 !important;
       text-transform: capitalize;
-      font-weight: 600;
+      font-weight: 200;
     }
   }
 }
