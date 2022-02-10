@@ -1,0 +1,84 @@
+@use '~src/scss/custom' as *;
+
+@media (min-width: 993px) {
+  .who-amI {
+    margin-left: 6rem;
+  }
+  .pres-title {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    &--presentation {
+      font-family: $typo_base;
+      text-transform: capitalize;
+      font-weight: 450;
+      font-size: 2.5rem;
+      color:  #4996F5;
+    }
+  }
+  .pres-contains {
+    margin-bottom: 4rem;
+    &--presentation {
+      font-family: $typo_base;
+      font-size: 1.35rem;
+    }
+  }
+
+  .btn-outline-primary {
+    &--download {
+      padding-left: 1rem;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .who-amI {
+    margin-left: 8rem;
+  }
+  .pres-title {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    &--presentation {
+      font-family: $typo_base;
+      text-transform: capitalize;
+      font-weight: 250;
+      font-size: 1.75rem;
+      color:  #4996F5;
+    }
+  }
+
+  .pres-contains {
+    margin-bottom: 1rem;
+    &--presentation {
+      font-family: $typo_base;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .who-amI {
+    text-align: center;
+  }
+  .pres-title {
+    margin-top: 1.85rem;
+    margin-bottom: 1rem;
+    &--presentation {
+      font-family: $typo_base;
+      text-transform: capitalize;
+      font-weight: 250;
+      font-size: 1.75rem;
+      color:  #4996F5;
+    }
+  }
+
+  .pres-contains {
+    margin-bottom: 1rem;
+    &--presentation {
+      font-family: $typo_base;
+      font-size: 1rem;
+    }
+  }
+}
+
+
+
